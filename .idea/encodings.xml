@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/zk-dubbo-demo/order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-dubbo-demo/order/order-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-dubbo-demo/product" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-dubbo-demo/product/product-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-dubbo-demo/product/product-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-dubbo-demo/product/product-server" charset="UTF-8" />
+  </component>
+</project>

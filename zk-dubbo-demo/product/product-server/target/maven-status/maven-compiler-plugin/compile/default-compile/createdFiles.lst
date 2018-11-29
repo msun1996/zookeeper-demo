@@ -1,0 +1,6 @@
+com\product\ProductApplication.class
+com\product\domain\ProductInfo.class
+com\product\dao\ProductInfoDao.class
+com\product\enums\ResultEnum.class
+com\product\exception\ProductException.class
+com\product\service\impl\ProductServiceImpl.class

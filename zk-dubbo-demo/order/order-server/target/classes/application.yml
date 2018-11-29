@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: password
+    url: jdbc:mysql://127.0.0.1:3306/shop?useUnicode=true&characterEncoding=utf8&useSSL=false
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.order.domain
+dubbo:
+  application:
+    id: order
+    name: order
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 123456
+  registry:
+    id: my-order
+    address: 127.0.0.1:2181
+    protocol: zookeeper
+    client: curator
+    timeout: 3000
+product:
+  service:
+    version: 1.0.0
+server:
+  port: 8081
