@@ -1,14 +1,14 @@
 # Zookeeper
 * Zookeeper API实例
 * Zookeeper Curator实例
-* Zookeeper Dubbo整合及Zookeeper分布式锁(基于SpringBoot订单与商品服务实例) 
+* [Zookeeper Dubbo整合及Zookeeper分布式锁(基于SpringBoot订单与商品服务实例)][0]
 
 # Zookeepr基础
 > ZooKeeper是一种为分布式应用所设计的高可用、高性能且一致的开源 协调服务，它提供了一项基本服务：**分布式锁服务**。由于ZooKeeper的开源特性，后来我们的开发者在分布式锁的基础上，摸索了出了其他的使用方法：**配置维护、组服务、分布式消息队列**、**分布式通知/协调**等。
 
 ---
 
-![](index_files/4e33d108-c8b4-4cc2-907e-c9adcea9355f.jpg)
+![](doc/zk%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF.jpg)
 
 ## zk的作用体现
 *  首脑选举模式
@@ -282,3 +282,5 @@ get /real-cluster
 |`voidaddAuthInfo(String scheme, byte[] auth)`|客户端将自己的授权信息提交给服务器，服务器将根据这个授权信息验证客户端的访问权限。|
 |`Stat setACL(String path,List<ACL> acl, int version)`|给某个目录节点重新设置访问权限，需要注意的是 Zookeeper 中的目录节点权限不具有传递性，父目录节点的权限不能传递给子目录节点。目录节点 ACL 由两部分组成：perms 和 id。Perms 有 ALL、READ、WRITE、CREATE、DELETE、ADMIN 几种 而 id 标识了访问目录节点的身份列表，默认情况下有以下两种：ANYONE_ID_UNSAFE = new Id("world", "anyone") 和 AUTH_IDS = new Id("auth", "") 分别表示任何人都可以访问和创建者拥有访问权限。|
 |`List<ACL>getACL(String path,Stat stat)`|获取某个目录节点的访问权限列表|
+
+  [0]: https://github.com/msun1996/zookeeper-demo/tree/master/zk-dubbo-demo
